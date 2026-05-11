@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- SEO básico -->
+  <title>Thiago Orel Alvarez — Portfolio</title>
+  <meta name="description" content="Portfolio de Thiago Orel Alvarez, estudiante de Gestión de Tecnologías de la Información en UNPAZ. Desarrollador web con Python y JavaScript." />
+  <meta name="author" content="Thiago Orel Alvarez" />
+
+  <!-- Open Graph (para cuando compartís el link) -->
+  <meta property="og:title" content="Thiago Orel Alvarez — Portfolio" />
+  <meta property="og:description" content="Estudiante de GTI en UNPAZ. Python · JavaScript · Desarrollo web." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Fondo decorativo -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="container">
+
+    <!-- ── HERO ── -->
+    <section class="hero" aria-label="Presentación">
+      <span class="hero-tag">disponible para proyectos</span>
+      <h1 class="hero-name">Thiago Orel <em>Alvarez</em></h1>
+      <p class="hero-study">Gestión de Tecnologías de la Información · UNPAZ</p>
+
+      <ul class="skills-row" aria-label="Habilidades y tecnologías">
+        <li class="skill"><span class="skill-dot" aria-hidden="true"></span>Python</li>
+        <li class="skill"><span class="skill-dot" aria-hidden="true"></span>JavaScript</li>
+        <li class="skill"><span class="skill-dot" aria-hidden="true"></span>HTML / CSS</li>
+        <li class="skill"><span class="skill-dot" aria-hidden="true"></span>Git</li>
+        <li class="skill"><span class="skill-dot" aria-hidden="true"></span>Desarrollo web</li>
+      </ul>
+    </section>
+
+    <!-- ── PROYECTOS ── -->
+    <section class="projects-section" aria-label="Proyectos">
+      <div class="carousel-wrapper">
+
+        <button class="arrow-btn" id="prev" aria-label="Proyecto anterior">
+          &#8592;
+        </button>
+
+        <div class="carousel-frame" aria-live="polite">
+          <div class="project-header">
+            <span class="proj-title" id="proj-title"></span>
+            <span class="proj-tag" id="proj-tag"></span>
+          </div>
+
+          <div class="proj-preview" id="proj-preview" role="img" aria-label="Vista previa del proyecto">
+            <div class="browser-chrome">
+              <span class="dot red" aria-hidden="true"></span>
+              <span class="dot yellow" aria-hidden="true"></span>
+              <span class="dot green" aria-hidden="true"></span>
+              <span class="browser-url" id="browser-url" aria-hidden="true"></span>
+            </div>
+            <div class="preview-content" id="preview-content"></div>
+          </div>
+
+          <div class="proj-footer">
+            <p class="proj-desc" id="proj-desc"></p>
+            <a class="proj-link" id="proj-link" href="#" target="_blank" rel="noopener noreferrer">
+              Ver en GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <button class="arrow-btn" id="next" aria-label="Proyecto siguiente">
+          &#8594;
+        </button>
+
+      </div>
+
+      <!-- Dots de navegación -->
+      <div class="carousel-dots" id="carousel-dots" aria-label="Navegación de proyectos" role="tablist"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Hecho por <strong>Thiago Orel Alvarez</strong> ·
+      <a href="https://github.com/OrlezTh" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+</html>
