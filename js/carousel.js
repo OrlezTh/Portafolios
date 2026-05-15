@@ -14,6 +14,7 @@
   const linkEl    = document.getElementById("proj-link");
   const previewEl = document.getElementById("preview-content");
   const urlEl     = document.getElementById("browser-url");
+  const bioEl     = document.getElementById("proj-bio");
   const dotsEl    = document.getElementById("carousel-dots");
 
   /* ── Renderizar proyecto ── */
