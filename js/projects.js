@@ -29,7 +29,7 @@ const PROJECTS = [
     preview:  "iframe",
   },
   {
-    title:    "Próximo proyecto",
+    title:    " Pagina de Restaurante falso",
     tag:      "HTML · CSS · JS",
     desc:     "Pagina de restaurante L'Arcada.                                                                     ",
     url:      "https://github.com/OrlezTh/Pagina-Restaurante/",
@@ -37,13 +37,14 @@ const PROJECTS = [
     urlLabel: "Ver en GitHub ↗",
     preview:  "iframe",
   },
+
   {
-    title:    "",
+    title:    "Página de seguimiento de habitos",
     tag:      "HTML · CSS · JS",
-    desc:     "Sistema de gestión de préstamos. Interfaz completa con cálculo de cuotas y seguimiento.",
-    url:      "https://github.com/OrlezTh/Pagina-prestamos-optimizada",
-    liveUrl:  "https://OrlezTh.github.io/Pagina-prestamos-optimizada",
+    desc:     "Seguimiento de habitos.",
+    url:      "https://github.com/OrlezTh/H-bitos-tracker",
+    liveUrl:  "https://orlezth.github.io/H-bitos-tracker/",
     urlLabel: "Ver en GitHub ↗",
-    preview:  "iframe", 
-  }
+    preview:  "iframe",
+  },
 ];
