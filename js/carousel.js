@@ -24,6 +24,7 @@
     titleEl.textContent = p.title;
     tagEl.textContent   = p.tag;
     descEl.textContent  = p.desc;
+    if (bioEl) bioEl.textContent = p.bio || "";
     urlEl.textContent   = p.url
       ? p.url.replace("https://", "")
       : "próximamente...";
