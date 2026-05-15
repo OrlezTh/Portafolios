@@ -24,7 +24,21 @@
     titleEl.textContent = p.title;
     tagEl.textContent   = p.tag;
     descEl.textContent  = p.desc;
-    if (bioEl) bioEl.textContent = p.bio || "";
+
+    /* Bio con animación */
+    if (bioEl) {
+      bioEl.classList.add("bio-exit");
+      setTimeout(() => {
+        bioEl.textContent = p.bio || "";
+        bioEl.classList.remove("bio-exit");
+        bioEl.classList.add("bio-enter");
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            bioEl.classList.remove("bio-enter");
+          });
+        });
+      }, 200);
+    }
     urlEl.textContent   = p.url
       ? p.url.replace("https://", "")
       : "próximamente...";

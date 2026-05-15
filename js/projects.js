@@ -23,7 +23,7 @@ const PROJECTS = [
   {
     title:    "Página de préstamos",
     tag:      "HTML · CSS · JS",
-    desc:     "Sistema de gestión de préstamos. Interfaz completa con cálculo de cuotas y seguimiento.",
+    desc:     "Sistema de gestión de préstamos. con cuotas y seguimiento.",
     bio:      "App web para registrar y hacer seguimiento de préstamos personales. Permite cargar clientes con monto, cuotas y fecha de inicio. Cada tarjeta muestra el progreso en pesos reales, dots interactivos para marcar cuotas pagadas y un calendario que resalta los días de cobro con hover informativo. Los datos se guardan en un archivo JSON local (con Node) o en localStorage.",
     url:      "https://github.com/OrlezTh/Pagina-prestamos-optimizada",
     liveUrl:  "https://OrlezTh.github.io/Pagina-prestamos-optimizada",
@@ -33,8 +33,8 @@ const PROJECTS = [
   {
     title:    "Página de Restaurante falso",
     tag:      "HTML · CSS · JS",
-    desc:     "Página de restaurante L'Arcada.",
-    bio:      "Landing page para el restaurante ficticio L'Arcada. Diseño visual con secciones de menú, ambiente y reservas. Enfocado en maquetado HTML/CSS semántico con algo de interactividad en JavaScript.",
+    desc:     "Página de restaurante.",
+    bio:      "Landing page para el restaurante ficticio. Diseño visual con secciones de menú, ambiente y reservas. Enfocado en maquetado HTML/CSS semántico con algo de interactividad en JavaScript.",
     url:      "https://github.com/OrlezTh/Pagina-Restaurante/",
     liveUrl:  "https://orlezth.github.io/Pagina-Restaurante/",
     urlLabel: "Ver en GitHub ↗",

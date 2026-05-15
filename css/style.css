@@ -88,7 +88,8 @@ a:hover { color: var(--text); }
 .container {
   position: relative;
   z-index: 1;
-  max-width: 880px;
+  max-width: 1000px;
+  max-height: 10f00px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -215,7 +216,7 @@ a:hover { color: var(--text); }
 /* ── Frame del carrusel ── */
 .carousel-frame {
   flex: 1;
-  max-width: 880px;
+  max-width: 1000px;
   border: 1px solid var(--border2);
   border-radius: var(--radius-lg);
   background: var(--surface);
@@ -421,7 +422,7 @@ a:hover { color: var(--text); }
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-top: 1.25rem;
+  margin-top: 0.5rem;
 }
 
 .dot-btn {
@@ -469,4 +470,46 @@ a:hover { color: var(--text); }
   .carousel-wrapper { gap: 0.75rem; }
   .arrow-btn { width: 36px; height: 36px; font-size: 16px; }
   .hero { padding: 5rem 0 3rem; }
+}
+/* ── Bio del proyecto (sección separada) ── */
+.project-bio-section {
+  padding: 0.1rem;
+  animation: fadeUp 0.7s 0.25s ease both;
+}
+
+.project-bio-box {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.project-bio-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+#proj-bio {
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.7;
+  min-height: 80px;
+  will-change: opacity;
+  transition: opacity 0.2s ease;
+}
+
+#proj-bio.bio-exit {
+  opacity: 0;
+}
+
+#proj-bio.bio-enter {
+  opacity: 0;
 }
